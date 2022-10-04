@@ -7,6 +7,23 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 
 感谢采用我的配置QwQ 
 
+# 公告
+
+—————— ash的配置文件的编写，原因如下 ——————
+
+1.配置编写一般是写最新版本，可是他的最新版本在编辑时时常崩溃
+
+![image](https://user-images.githubusercontent.com/89105781/193769603-0fb3984f-06c0-4ae9-b183-74280fe5a6fc.png)
+
+2.官方频道调查收集时莫名封禁了作者        PS：我不理解在stash群里问关于Stash配置编写向的问题有什么错误
+
+![image](https://user-images.githubusercontent.com/89105781/193769961-383c21e5-b47c-4ec7-a5b3-04bfe2b3a84f.png)
+
+3.用户基数少，且有圈内口碑上升空间很大
+
+所以我决定，暂时无限延期Stash的配置文件的编写
+
+
 # 使用方法
 点击红色框出的文件后复制全部粘贴至Stash即可（QuantumultX需要以文本格式编辑）
 
@@ -15,6 +32,9 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 ![image](https://user-images.githubusercontent.com/89105781/193759659-062bd96d-44ec-4634-8363-296b80ae547a.png)
 
 
+# 使用技巧
+
+![image](https://user-images.githubusercontent.com/89105781/193768851-c27e7eba-7320-4fb8-830c-9d7a012ebd87.png)
 
 
 
