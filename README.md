@@ -1,5 +1,5 @@
 # 前言
-Stash配置文件 纯手工自制 分流更齐 更适合上手
+Stash配置文件 耗费俩人纯手工自制 懒人配置
 
 我的TG频道：https://t.me/mengyulianmian
 
