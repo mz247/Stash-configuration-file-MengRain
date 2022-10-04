@@ -10,7 +10,14 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 # 使用方法
 复制后方内容粘贴至Stash：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash-MengRain%EF%BC%86Coldvvater-Config.yaml
 
-# 鸣谢
+
+# 注意！！！ 不要用可视化编辑
+
+不要用可视化编辑！   不要用可视化编辑！   不要用可视化编辑！ 会出Bug的！！！
+
+这是软件层面的问题！  这是软件层面的问题！  这是软件层面的问题！
+
+# 特别鸣谢
 在此感谢 [@Coldvvater](https://github.com/Coldvvater) 对本配置的支持！Coldvvater完成了对本配置文件的修复与改正
 
 ![image](https://user-images.githubusercontent.com/89105781/193831651-057e7145-fdea-48d4-b73e-1709b1d22944.png)
