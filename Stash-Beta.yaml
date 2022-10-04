@@ -132,11 +132,11 @@ proxy-groups:
   - name: 全球
     type: select
     proxies: &G
-      - US
-      - HK
-      - JP
-      - TW
-      - SG
+      - US 美国
+      - HK 香港
+      - JP 日本
+      - TW 台湾
+      - SG 新加坡
       - 漏网之鱼
       - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
