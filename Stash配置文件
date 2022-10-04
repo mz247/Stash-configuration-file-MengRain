@@ -6,18 +6,23 @@
 # 找到 {远程订阅} 部分，将【你的订阅】替换为自己的机场订阅链接  
 
 
-
+#混合端口
 mixed-port: 7890
+#允许局域网
 allow-lan: true
+#绑定地址
 bind-address: '*'
+#模式:rule（规则） / global（全局代理）/ direct（全局直连）
 mode: Rule
+#日志级别（日志输出级别：分级如后silent / info / warning / error / debug级别越高日志输出量越大）
 log-level: silent
+#外部控制器
 external-controller: 127.0.0.1:9090
 
 #DNS设置
 dns:
   enable: true
-  listen: 0.0.0.0:53
+  listen: 0.0.0.0:1053
   #DNS服务器
   default-nameserver:
     - 119.29.29.29
@@ -53,7 +58,6 @@ proxies:
 proxy-providers:
 
   MyProxy: &MyProxy #建立锚点
-     #多机场用户请使用Sub-Store生成自己的订阅地址并替换以下url地址
     url: https://sub.store/download/collection/MySub
     interval: 86400
     health-check:
