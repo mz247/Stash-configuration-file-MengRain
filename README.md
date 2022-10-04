@@ -12,6 +12,7 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 
 或者复制后方链接在Stash中引用：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash配置文件
 
+![image](https://user-images.githubusercontent.com/89105781/193759659-062bd96d-44ec-4634-8363-296b80ae547a.png)
 
 
 
