@@ -10,7 +10,7 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 # 使用方法
 点击红色框出的文件后复制全部粘贴至Stash即可（QuantumultX需要以文本格式编辑）
 
-或者复制后方链接在Stash中引用：
+或者复制后方链接在Stash中引用：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash配置文件
 
 
 
