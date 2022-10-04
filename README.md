@@ -8,7 +8,7 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 感谢采用我的配置QwQ 
 
 # 使用方法
-复制后方内容粘贴至Stash：https://raw.githubusercontent.com/Coldvvater/Stash-configuration-file-MengRain/main/Stash-Beta.yaml
+复制后方内容粘贴至Stash：https://raw.githubusercontent.com/Coldvvater/Stash-configuration-file-MengRain/main/Stash-MengRain＆Coldvvater-Config.yaml
 
 # 鸣谢
 在此感谢 [@Coldvvater](https://github.com/Coldvvater) 对本配置的支持！Coldvvater完成了对本配置文件的修复与改正
