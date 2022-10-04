@@ -7,29 +7,8 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 
 感谢采用我的配置QwQ 
 
-# 公告
-
-—————— Stash的配置文件编写 无限期延期 原因如下 ——————
-
-1.配置编写一般是写最新版本，可是他的最新版本在编辑时时常崩溃
-
-![image](https://user-images.githubusercontent.com/89105781/193769603-0fb3984f-06c0-4ae9-b183-74280fe5a6fc.png)
-
-2.官方频道调查收集时莫名封禁了作者        PS：我不理解在stash群里问关于Stash配置编写向的问题有什么错误
-
-![image](https://user-images.githubusercontent.com/89105781/193769961-383c21e5-b47c-4ec7-a5b3-04bfe2b3a84f.png)
-
-3.用户基数少，且有圈内口碑上升空间很大
-
-所以我决定，暂时无限延期Stash的配置文件的编写，待贵软件稳定时恢复更新
-
-
 # 使用方法
-点击红色框出的文件后复制全部粘贴至Stash即可（QuantumultX需要以文本格式编辑）
-
-或者复制后方链接在Stash中引用：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash配置文件
-
-![image](https://user-images.githubusercontent.com/89105781/193759659-062bd96d-44ec-4634-8363-296b80ae547a.png)
+复制后方内容粘贴至Stash：https://raw.githubusercontent.com/Coldvvater/Stash-configuration-file-MengRain/main/Stash-Beta.yaml
 
 
 # 使用技巧
