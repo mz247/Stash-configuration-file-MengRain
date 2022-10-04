@@ -1,7 +1,7 @@
 # 前言
 Stash配置文件 耗费俩人脑细胞纯手工制作 懒人配置
 
-我的TG频道：https://t.me/mengyulianmian
+我的TG频道：一键加入
 
 我的TG交流群：https://t.me/mengdelaochao
 
