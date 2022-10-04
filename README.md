@@ -11,7 +11,7 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 复制后方内容粘贴至Stash：https://raw.githubusercontent.com/Coldvvater/Stash-configuration-file-MengRain/main/Stash-Beta.yaml
 
 # 鸣谢
-在此感谢 @Coldvvater 对本配置的支持！Coldvvater完成了对本配置文件的修复与改正
+在此感谢 [@Coldvvater](https://github.com/Coldvvater) 对本配置的支持！Coldvvater完成了对本配置文件的修复与改正
 
 # 免责声明
 MengRain 本仓库中涉及的任何解锁和解密分析脚本仅用于资源共享和学习研究，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断。
