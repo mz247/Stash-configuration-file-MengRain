@@ -3,36 +3,27 @@
 # 最后一次更新于：2022.10.4
 # Author: MengRain  （我的TG频道：https://t.me/mengyulianmian  可从频道进群交流）
 # 下载配置后,请手动添加机场订阅
-# 找到 {远程订阅} 部分，将【你的订阅】替换为自己的机场订阅链接  PS:【】这俩符号记得一起替换了
+# 找到 {远程订阅} 部分，将*MyProxy替换为自己的机场订阅链接  
 
 
 
-# 混合端口
 mixed-port: 7890
-# 允许局域网：true（是）false（否）
 allow-lan: true
-# IPv6支持（默认开启）
-ipv6 = true
-# 绑定地址
 bind-address: '*'
-# 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）
 mode: Rule
-# 设置日志输出级别 (silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启）
 log-level: silent
-# 外部控制器
 external-controller: 127.0.0.1:9090
 
-# DNS设置
+#DNS设置
 dns:
   enable: true
-  listen: 0.0.0.0:1053
+  listen: 0.0.0.0:53
   #DNS服务器
   default-nameserver:
     - 119.29.29.29
     - 119.28.28.28
     - 223.5.5.5
     - 114.114.114.114
-    - system
   #DoH服务器
   nameserver:
     - https://dns.alidns.com/dns-query
@@ -58,7 +49,7 @@ dns:
 #本地代理
 proxies:
 
-#远程订阅(在【你的订阅】粘入你的订阅链接)
+#远程订阅
 proxy-providers:
 
   MyProxy: &MyProxy #建立锚点
