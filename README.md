@@ -34,6 +34,6 @@ MengRain 对任何本仓库中包含的脚本在使用中可能出现的问题�
 
 
 # 补充内容
-需要更多分流规则请访问：@blackmatrix7（链接：https://github.com/blackmatrix7/ios_rule_script/tree/master/rule ）
+需要更多分流规则请访问：@blackmatrix7（链接：https://github.com/blackmatrix7/ios_rule_script/tree/master/rule）
 
 机场推荐在TG群（可从频道进群或者点击文章开头处的链接）
