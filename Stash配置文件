@@ -3,7 +3,7 @@
 # 最后一次更新于：2022.10.4
 # Author: MengRain  （我的TG频道：https://t.me/mengyulianmian  可从频道进群交流）
 # 下载配置后,请手动添加机场订阅
-# 找到 {远程订阅} 部分，将【你的订阅】替换为自己的机场订阅链接  
+# 找到 {远程订阅} 部分，替换为自己的机场订阅链接  
 
 
 #混合端口
@@ -67,27 +67,27 @@ proxy-providers:
       
   #美国节点
   MyProxy-US:
-    <<: 【你的订阅】 #引用锚点内容
+    <<: *MyProxy #引用锚点内容
     filter: "美|美国|\U0001F1FA\U0001F1F8|US|us"
   
   #香港节点
   MyProxy-HK:
-    <<: 【你的订阅】 #引用锚点内容
+    <<: *MyProxy #引用锚点内容
     filter: "HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong"
   
   #日本节点
   MyProxy-JP:
-    <<: 【你的订阅】 #引用锚点内容
+    <<: *MyProxy  #引用锚点内容
     filter: "日|日本|东京|\U0001F1EF\U0001F1F5|JP"
   
   #台湾节点
   MyProxy-TW:
-    <<: 【你的订阅】 #引用锚点内容
+    <<: *MyProxy  #引用锚点内容
     filter: "台|台湾|TW"
   
   #新加坡节点
   MyProxy-SG:
-    <<: 【你的订阅】 #引用锚点内容
+    <<: *MyProxy  #引用锚点内容
     filter: "城|新|新加坡|\U0001F1F8\U0001F1EC|SG"
   
 #策略组
