@@ -132,13 +132,13 @@ proxy-groups:
   
   - name: 全球
     type: select
-    proxies:&G
+    proxies: &G
       - US
       - HK
       - JP
       - TW
       - SG
-      - Final
+      - 漏网之鱼
       - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
   
@@ -262,12 +262,6 @@ proxy-groups:
 
 #远程规则集合
 rule-providers:
-
-  ASN-rules:
-    behavior: classical
-    name:ASN
-    interval: 86400
-    url: https://raw.githubusercontent.com/Coldvvater/Clash/master/RuleSet/ASN_China.yaml
     
   Netflix-rules:
     behavior: classical
@@ -397,7 +391,6 @@ rule-providers:
 
 #分流规则引用
 rules:
-  #- RULE-SET,ASN-rules,DIRECT
   - RULE-SET,Netflix-rules,Netflix
   - RULE-SET,Disney-rules,Disney+
   - RULE-SET,HBO-rules,HBO
