@@ -137,7 +137,7 @@ proxy-groups:
       - JP
       - TW
       - SG
-      - Final
+      - 漏网之鱼
       - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
   
@@ -186,8 +186,8 @@ proxy-groups:
   - name: Bilibili
     type: select
     proxies:
-      - HK
-      - TW
+      - HK 香港
+      - TW 台湾
       - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
   
@@ -255,7 +255,6 @@ proxy-groups:
     type: select
     proxies:
     - DIRECT
-    - Auto-HK
     - Proxy
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
