@@ -1,9 +1,9 @@
-# MengRain - config   (Stash)
+# MengRain & Coldvvater - Beta   (Stash)
 # Date:2022.10.4
-# 最后一次更新于：2022.10.4
-# Author: MengRain ＆ Coldvvater （我的TG频道：https://t.me/mengyulianmian  可从频道进群交流）
-# 下载配置后,请手动添加机场订阅
-# 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接  
+# 
+# 此为测试版本 专用于实验  非开发人员请勿使用本版本
+# 此为测试版本 专用于实验  非开发人员请勿使用本版本
+# 此为测试版本 专用于实验  非开发人员请勿使用本版本
 
 #混合端口
 mixed-port: 7890
