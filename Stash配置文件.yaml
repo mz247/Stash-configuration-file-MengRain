@@ -93,274 +93,172 @@ proxy-providers:
 #策略组
 proxy-groups:
 
-- name: Proxy
-  type: select
-  use:
-    - MyProxy
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
-
-
-- name: US 美国
-  type: select
-  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-  use:
-    - MyProxy-US
-
-- name: HK 香港
-  type: select
-  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-  use:
-    - MyProxy-HK
-
-- name: JP 日本
-  type: select
-  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
-  use:
-    - MyProxy-JP
-
-- name: TW 台湾
-  type: select
-  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
-  use:
-    - MyProxy-TW
-
-- name: SG 新加坡
-  type: select
-  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-  use:
-    - MyProxy-SG
-
-- name: 全球
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
-
-- name: 国外媒体
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
-
-- name: Netflix
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
-
-- name: Disney+
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
-
-- name: HBO
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
-
-- name: Youtube
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
-
-- name: Spotify
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
-
-- name: TikTok
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
-
-- name: Bilibili
-  type: select
-  proxies:
-  - HK
-  - TW
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
-
-- name: Telegram
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
-
-- name: Twitter
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
-
-- name: Speedtest
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
-
-- name: PayPal
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
-
-- name: TestFlight
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
-
-- name: Apple
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
-
-- name: Google
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
-
-- name: Microsoft
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
-
-- name: Weibo
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Weibo.png
-
-- name: 中国大陆
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
-
-- name: 漏网之鱼
-  type: select
-  proxies:
-  - DIRECT
-  - Auto-HK
-  - Proxy
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+  - name: Proxy
+    type: select
+    use:
+      - MyProxy
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
+  
+  
+  - name: US 美国
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+    use:
+      - MyProxy-US
+  
+  - name: HK 香港
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+    use:
+      - MyProxy-HK
+  
+  - name: JP 日本
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+    use:
+      - MyProxy-JP
+  
+  - name: TW 台湾
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+    use:
+      - MyProxy-TW
+  
+  - name: SG 新加坡
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    use:
+      - MyProxy-SG
+  
+  - name: 全球
+    type: select
+    proxies:&G
+      - US
+      - HK
+      - JP
+      - TW
+      - SG
+      - Final
+      - DIRECT
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
+  
+  - name: 国外媒体
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+  
+  - name: Netflix
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+  
+  - name: Disney+
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+  
+  - name: HBO
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+  
+  - name: Youtube
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+  
+  - name: Spotify
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+  
+  - name: TikTok
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+  
+  - name: Bilibili
+    type: select
+    proxies:
+      - HK
+      - TW
+      - DIRECT
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
+  
+  - name: Telegram
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+  
+  - name: Twitter
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+  
+  - name: Speedtest
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
+  
+  - name: PayPal
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
+  
+  - name: TestFlight
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
+  
+  - name: Apple
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
+  
+  - name: Google
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+  
+  - name: Microsoft
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
+  
+  - name: Weibo
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Weibo.png
+  
+  - name: 中国大陆
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
+  
+  - name: 漏网之鱼
+    type: select
+    proxies:
+    - DIRECT
+    - Auto-HK
+    - Proxy
+    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合
 rule-providers:
@@ -424,6 +322,7 @@ rule-providers:
     interval: 86400
     name: Clubhouse
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Clubhouse/Clubhouse.yaml
+
   ClubhouseIP-rules:
     behavior: classical
     interval: 86400
@@ -483,6 +382,7 @@ rule-providers:
     interval: 86400
     name: Mainland
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China.yaml
+
   MainlandIP-rules:
     behavior: ipcidr
     interval: 86400
@@ -497,25 +397,26 @@ rule-providers:
 
 #分流规则引用
 rules:
-- RULE-SET,Netflix-rules,Netflix
-- RULE-SET,Disney-rules,Disney+
-- RULE-SET,HBO-rules,HBO
-- RULE-SET,Youtube-rules,Youtube
-- RULE-SET,Spotify-rules,Spotify
-- RULE-SET,TikTok-rules,TikTok
-- RULE-SET,Bilibili-rules,Bilibili
-- RULE-SET,Telegram-rules,Telegram
-- RULE-SET,Clubhouse-rules,Clubhouse
-- RULE-SET,ClubhouseIP-rules,Clubhouse
-- RULE-SET,Twitter-rules,Twitter
-- RULE-SET,Speedtest-rules,Speedtest
-- RULE-SET,PayPal-rules,PayPal
-- RULE-SET,TestFlight-rules,TestFlight
-- RULE-SET,Apple-rules,Apple
-- RULE-SET,Google-rules,Google
-- RULE-SET,Microsoft-rules,Microsoft
-- RULE-SET,Weibo-rules,Weibo
-- RULE-SET,Mainland-rules,Mainland
-- RULE-SET,MainlandIP-rules,Mainland
-- GEOIP,CN,DIRECT
-- MATCH,Final
+  #- RULE-SET,ASN-rules,DIRECT
+  - RULE-SET,Netflix-rules,Netflix
+  - RULE-SET,Disney-rules,Disney+
+  - RULE-SET,HBO-rules,HBO
+  - RULE-SET,Youtube-rules,Youtube
+  - RULE-SET,Spotify-rules,Spotify
+  - RULE-SET,TikTok-rules,TikTok
+  - RULE-SET,Bilibili-rules,Bilibili
+  - RULE-SET,Telegram-rules,Telegram
+  - RULE-SET,Clubhouse-rules,Clubhouse
+  - RULE-SET,ClubhouseIP-rules,Clubhouse
+  - RULE-SET,Twitter-rules,Twitter
+  - RULE-SET,Speedtest-rules,Speedtest
+  - RULE-SET,PayPal-rules,PayPal
+  - RULE-SET,TestFlight-rules,TestFlight
+  - RULE-SET,Apple-rules,Apple
+  - RULE-SET,Google-rules,Google
+  - RULE-SET,Microsoft-rules,Microsoft
+  - RULE-SET,Weibo-rules,Weibo
+  - RULE-SET,Mainland-rules,Mainland
+  - RULE-SET,MainlandIP-rules,Mainland
+  - GEOIP,CN,DIRECT
+  - MATCH,漏网之鱼
