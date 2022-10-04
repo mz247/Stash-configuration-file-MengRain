@@ -10,6 +10,10 @@ Stash配置文件 纯手工自制 分流更齐 更适合上手
 # 使用方法
 复制后方内容粘贴至Stash：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash-MengRain%EF%BC%86Coldvvater-Config.yaml
 
+将你的订阅替换至图中圈内即可
+
+![photo_2022-10-05_01-09-26](https://user-images.githubusercontent.com/89105781/193883041-15ba6daa-9840-48fd-aa1c-fc2c4e551b41.jpg)
+
 
 # 注意！！！ 不要用可视化编辑
 
