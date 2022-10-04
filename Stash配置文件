@@ -3,7 +3,7 @@
 # 最后一次更新于：2022.10.4
 # Author: MengRain  （我的TG频道：https://t.me/mengyulianmian  可从频道进群交流）
 # 下载配置后,请手动添加机场订阅
-# 找到 {远程订阅} 部分，将*MyProxy替换为自己的机场订阅链接  
+# 找到 {远程订阅} 部分，将【你的订阅】替换为自己的机场订阅链接  
 
 
 
@@ -63,27 +63,27 @@ proxy-providers:
       
   #美国节点
   MyProxy-US:
-    <<: *MyProxy #引用锚点内容
+    <<: 【你的订阅】 #引用锚点内容
     filter: "美|美国|\U0001F1FA\U0001F1F8|US|us"
   
   #香港节点
   MyProxy-HK:
-    <<: *MyProxy #引用锚点内容
+    <<: 【你的订阅】 #引用锚点内容
     filter: "HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong"
   
   #日本节点
   MyProxy-JP:
-    <<: *MyProxy #引用锚点内容
+    <<: 【你的订阅】 #引用锚点内容
     filter: "日|日本|东京|\U0001F1EF\U0001F1F5|JP"
   
   #台湾节点
   MyProxy-TW:
-    <<: *MyProxy #引用锚点内容
+    <<: 【你的订阅】 #引用锚点内容
     filter: "台|台湾|TW"
   
   #新加坡节点
   MyProxy-SG:
-    <<: *MyProxy #引用锚点内容
+    <<: 【你的订阅】 #引用锚点内容
     filter: "城|新|新加坡|\U0001F1F8\U0001F1EC|SG"
   
 #策略组
@@ -95,43 +95,38 @@ proxy-groups:
     - MyProxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
 
-- name: Auto-HK
-  type: url-test
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
-  use:
-    - MyProxy-HK
 
-- name: US
+- name: US 美国
   type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
   use:
     - MyProxy-US
 
-- name: HK
+- name: HK 香港
   type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
   use:
     - MyProxy-HK
 
-- name: JP
+- name: JP 日本
   type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
   use:
     - MyProxy-JP
 
-- name: TW
+- name: TW 台湾
   type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW02.png
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
   use:
     - MyProxy-TW
 
-- name: SG
+- name: SG 新加坡
   type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
   use:
     - MyProxy-SG
 
-- name: Globle
+- name: 全球
   type: select
   proxies:
   - US
@@ -143,7 +138,7 @@ proxy-groups:
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
 
-- name: GlobleMedia
+- name: 国外媒体
   type: select
   proxies:
   - US
@@ -247,18 +242,6 @@ proxy-groups:
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 
-- name: Clubhouse
-  type: select
-  proxies:
-  - US
-  - HK
-  - JP
-  - TW
-  - SG
-  - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Clubhouse.png
-
 - name: Twitter
   type: select
   proxies:
@@ -355,7 +338,7 @@ proxy-groups:
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Weibo.png
 
-- name: Mainland
+- name: 中国大陆
   type: select
   proxies:
   - US
@@ -367,7 +350,7 @@ proxy-groups:
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
 
-- name: Final
+- name: 漏网之鱼
   type: select
   proxies:
   - DIRECT
@@ -375,7 +358,7 @@ proxy-groups:
   - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
-#远程规则集合声明
+#远程规则集合
 rule-providers:
 
   ASN-rules:
