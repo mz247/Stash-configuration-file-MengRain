@@ -425,5 +425,6 @@ rules:
   - RULE-SET,Weibo-rules,Weibo
   - RULE-SET,Mainland-rules,中国大陆
   - RULE-SET,MainlandIP-rules,中国大陆
+  - RULE-SET,Global-rules,Proxy
   #- GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
