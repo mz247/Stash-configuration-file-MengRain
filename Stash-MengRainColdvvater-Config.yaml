@@ -1,10 +1,12 @@
 # MengRain & Coldvvater-Config   (Stash)
-# Date:2022.10.4
-# 最后一次更新于：2022.10.4
+# Date:2022.10.5
+# 最后一次更新于：2022.10.5
 # Author: MengRain  （我的TG频道：https://t.me/mengyulianmian  可从频道进群交流）
 # 下载配置后,请手动添加机场订阅
 # 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接  
 
+subscribe-url: 你的订阅链接
+# 替换上面文字用于Stash获取机场流量信息并在主页显示
 
 #混合端口
 mixed-port: 7890
@@ -187,9 +189,9 @@ proxy-groups:
   - name: Bilibili
     type: select
     proxies:
+      - DIRECT
       - HK 香港
       - TW 台湾
-      - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
   
   - name: Telegram
@@ -255,12 +257,18 @@ proxy-groups:
   - name: 漏网之鱼
     type: select
     proxies:
-    - DIRECT
     - Proxy
+    - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合
 rule-providers:
+
+  ASN-rules: 
+    behavior: classical
+    interval: 86400
+    name: ASN
+    url: https://raw.githubusercontent.com/Coldvvater/Clash/master/RuleSet/ASN_China.yaml
     
   Netflix-rules:
     behavior: classical
@@ -390,6 +398,7 @@ rule-providers:
 
 #分流规则引用
 rules:
+  - RULE-SET,ASN-rules,DIRECT
   - RULE-SET,Netflix-rules,Netflix
   - RULE-SET,Disney-rules,Disney+
   - RULE-SET,HBO-rules,HBO
@@ -410,5 +419,5 @@ rules:
   - RULE-SET,Weibo-rules,Weibo
   - RULE-SET,Mainland-rules,Mainland
   - RULE-SET,MainlandIP-rules,Mainland
-  - GEOIP,CN,DIRECT
+  #- GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
