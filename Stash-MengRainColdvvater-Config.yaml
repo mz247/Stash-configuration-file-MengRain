@@ -263,8 +263,8 @@ proxy-groups:
   - name: 漏网之鱼
     type: select
     proxies:
-    - Proxy
-    - DIRECT
+      - Proxy
+      - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合
