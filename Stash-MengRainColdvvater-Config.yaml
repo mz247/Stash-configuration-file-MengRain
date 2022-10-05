@@ -396,7 +396,7 @@ rule-providers:
     name: MainlandIP
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
 
-  Globle-rules:
+  Global-rules:
     behavior: classical
     interval: 86400
     name: Outside
