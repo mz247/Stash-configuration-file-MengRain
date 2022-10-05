@@ -274,7 +274,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     name: ASN
-    url: https://raw.githubusercontent.com/Coldvvater/Clash/master/RuleSet/ASN_China.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Coldvvater/Clash/master/RuleSet/ASN_China.yaml
     
   Netflix-rules:
     behavior: classical
