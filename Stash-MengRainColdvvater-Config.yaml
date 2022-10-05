@@ -251,7 +251,13 @@ proxy-groups:
   - name: 中国大陆
     type: select
     proxies:
-      *G
+      - DIRECT
+      - US 美国
+      - HK 香港
+      - JP 日本
+      - TW 台湾
+      - SG 新加坡
+      - 漏网之鱼
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
   
   - name: 漏网之鱼
