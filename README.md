@@ -5,9 +5,11 @@ Stash配置文件 耗费俩人脑细胞纯手工制作 懒人配置
 
 我的TG交流群：[点击一键加入](https://t.me/mengdelaochao)
 
-感谢采用我的配置QwQ 
+感谢采用我们的配置QwQ 
 
 # 使用方法
+本配置仅生效于2代（TF版本）
+
 复制后方内容粘贴至Stash：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash-MengRainColdvvater-Config.yaml
 
 将你的订阅替换至图中圈内即可
