@@ -154,13 +154,13 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
   
   - name: Disney+
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
   
   - name: HBO
     type: select
@@ -172,19 +172,19 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
   
   - name: Spotify
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
   
   - name: TikTok
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
   
   - name: Bilibili
     type: select
@@ -198,13 +198,13 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
   
   - name: Twitter
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
   
   - name: Speedtest
     type: select
@@ -216,7 +216,7 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
   
   - name: TestFlight
     type: select
@@ -234,7 +234,7 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
   
   - name: Microsoft
     type: select
@@ -425,6 +425,5 @@ rules:
   - RULE-SET,Weibo-rules,Weibo
   - RULE-SET,Mainland-rules,中国大陆
   - RULE-SET,MainlandIP-rules,中国大陆
-  - RULE-SET,Global-rules,Proxy
   #- GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
