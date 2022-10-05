@@ -413,8 +413,8 @@ rules:
   - RULE-SET,TikTok-rules,TikTok
   - RULE-SET,Bilibili-rules,Bilibili
   - RULE-SET,Telegram-rules,Telegram
-  - RULE-SET,Clubhouse-rules,Clubhouse
-  - RULE-SET,ClubhouseIP-rules,Clubhouse
+  - RULE-SET,Clubhouse-rules,国外媒体
+  - RULE-SET,ClubhouseIP-rules,国外媒体
   - RULE-SET,Twitter-rules,Twitter
   - RULE-SET,Speedtest-rules,Speedtest
   - RULE-SET,PayPal-rules,PayPal
@@ -423,7 +423,7 @@ rules:
   - RULE-SET,Google-rules,Google
   - RULE-SET,Microsoft-rules,Microsoft
   - RULE-SET,Weibo-rules,Weibo
-  - RULE-SET,Mainland-rules,Mainland
-  - RULE-SET,MainlandIP-rules,Mainland
+  - RULE-SET,Mainland-rules,中国大陆
+  - RULE-SET,MainlandIP-rules,中国大陆
   #- GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
