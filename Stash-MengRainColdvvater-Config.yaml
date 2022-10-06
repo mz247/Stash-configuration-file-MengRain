@@ -422,9 +422,10 @@ rules:
   - RULE-SET,Google-rules,Google
   - RULE-SET,Microsoft-rules,Microsoft
   - RULE-SET,Weibo-rules,Weibo
-  - RULE-SET,Mainland-rules,中国大陆
-  - RULE-SET,MainlandIP-rules,中国大陆
+  #- RULE-SET,Mainland-rules,中国大陆
+  #- RULE-SET,MainlandIP-rules,中国大陆
   - RULE-SET,Global-rules,Proxy
+# ⚠注意：本配置目前主流使用ASN规则作为中国大陆分流，如不想使用，请在ASN规则前面加#号注释，同时把Mainland-rules、MainlandIP-rules及GEOIP前面的#号删除放行使其生效。
   - RULE-SET,ASN-rules,DIRECT
   #- GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
