@@ -142,13 +142,13 @@ proxy-groups:
       - SG 新加坡
       - 漏网之鱼
       - DIRECT
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
   
   - name: 国外媒体
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Media.png
   
   - name: Netflix
     type: select
@@ -166,7 +166,7 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO.png
   
   - name: Youtube
     type: select
@@ -222,13 +222,13 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png
   
   - name: Apple
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
   
   - name: Google
     type: select
