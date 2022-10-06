@@ -269,12 +269,6 @@ proxy-groups:
 
 #远程规则集合
 rule-providers:
-
-  ASN-rules: 
-    behavior: classical
-    interval: 86400
-    name: ASN
-    url: https://ghproxy.com/https://raw.githubusercontent.com/Coldvvater/Clash/master/RuleSet/ASN_China.yaml
     
   Netflix-rules:
     behavior: classical
@@ -402,9 +396,14 @@ rule-providers:
     name: Outside
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Global/Global_Classical.yaml
 
+  ASN-rules: 
+    behavior: classical
+    interval: 86400
+    name: ASN
+    url: https://raw.githubusercontent.com/Coldvvater/Clash/master/RuleSet/ASN_China.yaml
+
 #分流规则引用
 rules:
-  - RULE-SET,ASN-rules,DIRECT
   - RULE-SET,Netflix-rules,Netflix
   - RULE-SET,Disney-rules,Disney+
   - RULE-SET,HBO-rules,HBO
@@ -426,5 +425,6 @@ rules:
   - RULE-SET,Mainland-rules,中国大陆
   - RULE-SET,MainlandIP-rules,中国大陆
   - RULE-SET,Global-rules,Proxy
+  - RULE-SET,ASN-rules,DIRECT
   #- GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
