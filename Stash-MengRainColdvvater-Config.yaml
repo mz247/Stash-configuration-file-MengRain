@@ -258,14 +258,14 @@ proxy-groups:
       - TW 台湾
       - SG 新加坡
       - 漏网之鱼
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pig.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Heart.png
   
   - name: 漏网之鱼
     type: select
     proxies:
       - Proxy
       - DIRECT
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pig.png
 
 #远程规则集合
 rule-providers:
