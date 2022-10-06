@@ -210,7 +210,7 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
   
   - name: PayPal
     type: select
