@@ -10,7 +10,7 @@ Stash配置文件 耗费俩人脑细胞纯手工制作 懒人配置
 # 使用方法
 本配置仅生效于2代（TF版本）
 
-复制后方内容粘贴至Stash：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash-MengRainColdvvater-Config.yaml
+复制后方内容下载，然后于Stash打开：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash-MengRainColdvvater-Config.yaml
 
 将你的订阅替换至图中圈内即可
 
