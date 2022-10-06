@@ -240,13 +240,13 @@ proxy-groups:
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
   
   - name: Weibo
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Weibo.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png
   
   - name: 中国大陆
     type: select
