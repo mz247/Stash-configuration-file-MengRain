@@ -1,6 +1,6 @@
 # MengRain & Coldvvater-Config   (Stash)
 # Date:2022.10.5
-# 最后一次更新于：2022.10.5
+# 最后一次更新于：2022.10.10
 # Author: MengRain  （我的TG频道：https://t.me/mengyulianmian  可从频道进群交流）
 # 下载配置后,请手动添加机场订阅
 # 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接  
@@ -60,7 +60,9 @@ proxies:
 proxy-providers:
 
   MyProxy: &MyProxy #建立锚点
-    url: https://sub.store/download/collection/MySub
+    url: "https://sub.store/download/collection/MySub"
+    # 使用Clash类型订阅链接替换掉引号""内的链接使用。
+    # 或可使用通用订阅链接通过Sub-Store进行订阅转换。
     interval: 86400
     health-check:
       enable: true
@@ -99,42 +101,69 @@ proxy-groups:
     type: select
     use:
       - MyProxy
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
-  
-  
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
+
+  - name: 自动筛选
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    use: 
+       - MyProxy
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
+
+  - name: Fallback
+    type: fallback
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+    use:
+      - MyProxy
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
+
   - name: US 美国
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     use:
       - MyProxy-US
-  
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
+
   - name: HK 香港
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     use:
       - MyProxy-HK
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: JP 日本
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     use:
       - MyProxy-JP
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: TW 台湾
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
     use:
       - MyProxy-TW
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: SG 新加坡
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     use:
       - MyProxy-SG
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: 全球
     type: select
     proxies: &G
+      - 自动筛选
+      - Fallback
       - US 美国
       - HK 香港
       - JP 日本
@@ -252,6 +281,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - 自动筛选
+      - Fallback
       - US 美国
       - HK 香港
       - JP 日本
