@@ -103,7 +103,7 @@ proxy-groups:
       - MyProxy
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
 
-  - name: 自动筛选
+  - name: 自动选择
     type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     use: 
@@ -162,7 +162,7 @@ proxy-groups:
   - name: 全球
     type: select
     proxies: &G
-      - 自动筛选
+      - 自动选择
       - Fallback
       - US 美国
       - HK 香港
@@ -281,7 +281,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 自动筛选
+      - 自动选择
       - Fallback
       - US 美国
       - HK 香港
