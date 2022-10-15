@@ -5,6 +5,9 @@
 # 此为测试版本 专用于实验  非开发人员请勿使用本版本
 # 此为测试版本 专用于实验  非开发人员请勿使用本版本
 
+subscribe-url: 你的订阅链接
+# 替换上面文字用于Stash获取机场流量信息并在主页显示
+
 #混合端口
 mixed-port: 7890
 #允许局域网
@@ -49,7 +52,7 @@ dns:
     - '*.battlenet.com'
     - '*.blzstatic.cn'
     - '*.battle.net'
-    
+
 #本地代理
 proxies:
 
@@ -57,7 +60,9 @@ proxies:
 proxy-providers:
 
   MyProxy: &MyProxy #建立锚点
-    url: https://sub.store/download/collection/MySub
+    url: "https://sub.store/download/collection/MySub"
+    # 使用Clash类型订阅链接替换掉引号""内的链接使用。
+    # 或可使用通用订阅链接通过Sub-Store进行订阅转换。
     interval: 86400
     health-check:
       enable: true
@@ -67,27 +72,27 @@ proxy-providers:
   #美国节点
   MyProxy-US:
     <<: *MyProxy #引用锚点内容
-    filter: "美|美国|\U0001F1FA\U0001F1F8|US|us"
+    filter: "美|🇺🇲|US|(?i)States|American"
   
   #香港节点
   MyProxy-HK:
     <<: *MyProxy #引用锚点内容
-    filter: "HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong"
+    filter: "港|🇭🇰|HK|(?i)Hong"
   
   #日本节点
   MyProxy-JP:
     <<: *MyProxy #引用锚点内容
-    filter: "日|日本|东京|\U0001F1EF\U0001F1F5|JP"
+    filter: "日|🇯🇵|东京|JP|(?i)Japan"
   
   #台湾节点
   MyProxy-TW:
     <<: *MyProxy #引用锚点内容
-    filter: "台|台湾|TW"
+    filter: "台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan"
   
   #新加坡节点
   MyProxy-SG:
     <<: *MyProxy #引用锚点内容
-    filter: "城|新|新加坡|\U0001F1F8\U0001F1EC|SG"
+    filter: "新加坡|坡|狮城|🇸🇬|SG|(?i)Singapore"
 
 #策略组
 proxy-groups:
@@ -96,42 +101,69 @@ proxy-groups:
     type: select
     use:
       - MyProxy
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
-  
-  
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Rocket.png
+
+  - name: 自动选择
+    type: url-test
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
+    use: 
+       - MyProxy
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
+
+  - name: Fallback
+    type: fallback
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available.png
+    use:
+      - MyProxy
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
+
   - name: US 美国
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     use:
       - MyProxy-US
-  
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
+
   - name: HK 香港
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     use:
       - MyProxy-HK
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: JP 日本
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     use:
       - MyProxy-JP
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: TW 台湾
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
     use:
       - MyProxy-TW
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: SG 新加坡
-    type: select
+    type: url-test
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     use:
       - MyProxy-SG
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 300
   
   - name: 全球
     type: select
     proxies: &G
+      - 自动选择
+      - Fallback
       - US 美国
       - HK 香港
       - JP 日本
@@ -139,124 +171,132 @@ proxy-groups:
       - SG 新加坡
       - 漏网之鱼
       - DIRECT
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
   
   - name: 国外媒体
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Media.png
   
   - name: Netflix
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
   
   - name: Disney+
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
   
   - name: HBO
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/HBO.png
   
   - name: Youtube
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
   
   - name: Spotify
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
   
   - name: TikTok
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
   
   - name: Bilibili
     type: select
     proxies:
+      - DIRECT
       - HK 香港
       - TW 台湾
-      - DIRECT
     icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
   
   - name: Telegram
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
   
   - name: Twitter
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
   
   - name: Speedtest
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Speedtest.png
   
   - name: PayPal
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
   
   - name: TestFlight
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TestFlight.png
   
   - name: Apple
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
   
   - name: Google
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
   
   - name: Microsoft
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
   
   - name: Weibo
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Weibo.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Weibo.png
   
   - name: 中国大陆
     type: select
     proxies:
-      *G
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
+      - DIRECT
+      - 自动选择
+      - Fallback
+      - US 美国
+      - HK 香港
+      - JP 日本
+      - TW 台湾
+      - SG 新加坡
+      - 漏网之鱼
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Heart.png
   
   - name: 漏网之鱼
     type: select
     proxies:
-    - DIRECT
-    - Proxy
-    icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+      - Proxy
+      - DIRECT
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Pig.png
 
 #远程规则集合
 rule-providers:
@@ -381,11 +421,17 @@ rule-providers:
     name: MainlandIP
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
 
-  Globle-rules:
+  Global-rules:
     behavior: classical
     interval: 86400
     name: Outside
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Global/Global_Classical.yaml
+
+  ASN-rules: 
+    behavior: classical
+    interval: 86400
+    name: ASN
+    url: https://raw.githubusercontent.com/Coldvvater/Clash/master/RuleSet/ASN_China.yaml
 
 #分流规则引用
 rules:
@@ -397,8 +443,8 @@ rules:
   - RULE-SET,TikTok-rules,TikTok
   - RULE-SET,Bilibili-rules,Bilibili
   - RULE-SET,Telegram-rules,Telegram
-  - RULE-SET,Clubhouse-rules,Clubhouse
-  - RULE-SET,ClubhouseIP-rules,Clubhouse
+  - RULE-SET,Clubhouse-rules,国外媒体
+  - RULE-SET,ClubhouseIP-rules,国外媒体
   - RULE-SET,Twitter-rules,Twitter
   - RULE-SET,Speedtest-rules,Speedtest
   - RULE-SET,PayPal-rules,PayPal
@@ -407,7 +453,10 @@ rules:
   - RULE-SET,Google-rules,Google
   - RULE-SET,Microsoft-rules,Microsoft
   - RULE-SET,Weibo-rules,Weibo
-  - RULE-SET,Mainland-rules,Mainland
-  - RULE-SET,MainlandIP-rules,Mainland
-  - GEOIP,CN,DIRECT
+  #- RULE-SET,Mainland-rules,中国大陆
+  #- RULE-SET,MainlandIP-rules,中国大陆
+  - RULE-SET,Global-rules,Proxy
+# ⚠注意：本配置目前主流使用ASN规则作为中国大陆分流，如不想使用，请在ASN规则前面加#号注释，同时把Mainland-rules、MainlandIP-rules及GEOIP前面的#号删除放行使其生效。
+  - RULE-SET,ASN-rules,DIRECT
+  #- GEOIP,CN,DIRECT
   - MATCH,漏网之鱼
