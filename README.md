@@ -8,7 +8,7 @@ Stash配置文件 耗费俩人脑细胞纯手工制作 懒人配置
 感谢采用我们的配置QwQ 
 
 # 使用方法
-本配置仅生效于2代
+本配置仅生效于2代（2.0版本及以后）
 
 复制后方内容下载，然后于Stash打开：https://raw.githubusercontent.com/MengYuLianMian/Stash-configuration-file-MengRain/main/Stash-MengRainColdvvater-Config.yaml
 
