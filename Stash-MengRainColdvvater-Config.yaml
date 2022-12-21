@@ -1,6 +1,6 @@
 # MengRain & Coldvvater-Config   (Stash)
 # Date:2022.10.5
-# 最后一次更新于：2022.10.10
+# 最后一次更新于：2022.12.21
 # Author: MengRain  （我的TG频道：https://t.me/mengyulianmian  可从频道进群交流）
 # 下载配置后,请手动添加机场订阅
 # 找到 {远程订阅} 部分，将MyProxy 部分的 url替换为自己的机场订阅链接  
@@ -162,6 +162,7 @@ proxy-groups:
   - name: 全球
     type: select
     proxies: &G
+      - Proxy
       - 自动选择
       - Fallback
       - US 美国
@@ -281,6 +282,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - Proxy
       - 自动选择
       - Fallback
       - US 美国
